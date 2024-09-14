@@ -5,9 +5,7 @@ import SmallScreen from "./small-screen/SmallScreen";
 import { Suspense } from "react";
 
 export default async function Today() {
-    const response = await fetch(
-        `${process.env.API_URL}/product/featured/today`
-    );
+    const response = await fetch(`/api/product/featured/today`);
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
