@@ -6,7 +6,7 @@ import { Suspense } from "react";
 
 export default async function Today() {
     const response = await fetch(
-        `http://localhost:3000/api/product/featured/today`
+        `https://cv-eshop.netlify.app/api/product/featured/today`
     );
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
