@@ -1,0 +1,102 @@
+#swiperNavigationProductMedia {
+    width: 100%;
+    padding: 0 20px;
+}
+
+#swiperNavigationProductMediaSlider {
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    transition: transform 1.2s;
+}
+
+#swiperNavigationProductMediaSlider.activeSlide {
+    transform: scale(.95);
+}
+
+#swiperNavigationProductMediaSlider.deactiveSlide {
+    transform: scale(.9);
+}
+
+#swiperNavigationProductMedia .swiper-button-prev {
+    display: none;
+    border: 1px solid #eee2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d0d0d066;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/right-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% + 2px);
+    right: auto;
+    left: calc(50% + 10px);
+    margin-top: 130px;
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperNavigationProductMedia:hover .swiper-button-prev {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperNavigationProductMedia .swiper-button-disabled {
+    display: none;
+}
+
+#swiperNavigationProductMedia .swiper-button-prev::after {
+    content: "";
+}
+
+#swiperNavigationProductMedia .swiper-button-next {
+    display: none;
+    border: 1px solid #eee2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d0d0d066;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/left-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% - 2px);
+    right: calc(50% + 10px);
+    margin-top: 130px;
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperNavigationProductMedia:hover .swiper-button-next {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperNavigationProductMedia .swiper-button-next::after {
+    content: "";
+}
+
+@media screen and (min-width:768px) {
+
+    #swiperNavigationProductMedia .swiper-button-next,
+    #swiperNavigationProductMedia .swiper-button-prev {
+        display: flex
+    }
+
+    #swiperNavigationProductMedia {
+        padding: 0 5%;
+        padding-bottom: 150px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #swiperNavigationProductMedia {
+        padding: 0 8%;
+        padding-bottom: 80px;
+    }
+}

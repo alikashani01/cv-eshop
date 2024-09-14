@@ -1,0 +1,79 @@
+#swiperNavigationProductPhotosLarge {
+    width: 100%;
+    height: 420px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+#swiperNavigationProductPhotosLargeSlider {
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    transition: transform 1.2s;
+}
+
+#swiperNavigationProductPhotosLargeSlider.activeSlide {
+    transform: scale(.95);
+}
+
+#swiperNavigationProductPhotosLargeSlider.deactiveSlide {
+    transform: scale(.9);
+}
+
+#swiperNavigationProductPhotosLarge .swiper-button-prev {
+    box-shadow: 0 0 0 2px #eee5;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #dddddd66;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/right-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% + 1px);
+    right: 15px;
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperNavigationProductPhotosLarge:hover .swiper-button-prev {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperNavigationProductPhotosLarge .swiper-button-disabled {
+    display: none;
+}
+
+#swiperNavigationProductPhotosLarge .swiper-button-prev::after {
+    content: "";
+}
+
+#swiperNavigationProductPhotosLarge .swiper-button-next {
+    box-shadow: 0 0 0 2px #eee5;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #dddddd66;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/left-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% - 1px);
+    left: 15px;
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperNavigationProductPhotosLarge:hover .swiper-button-next {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperNavigationProductPhotosLarge .swiper-button-next::after {
+    content: "";
+}

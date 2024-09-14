@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply !overflow-visible !p-0;
+    }
+}
+
+/* Fonts: */
+@font-face {
+    font-family: shabnam;
+    src: url("/fonts/Shabnam.ttf");
+}
+
+@font-face {
+    font-family: shabnamthin;
+    src: url("/fonts/Shabnam-Thin.ttf");
+}
+
+@font-face {
+    font-family: shabnambold;
+    src: url("/fonts/Shabnam-Bold.ttf");
+}
+
+@font-face {
+    font-family: sft;
+    src: url("/fonts/SFUIDisplay-Thin.otf");
+}
+
+@font-face {
+    font-family: sfl;
+    src: url("/fonts/SFUIDisplay-Light.ttf");
+}
+
+@font-face {
+    font-family: sfr;
+    src: url("/fonts/SFUIDisplay-Regular.otf");
+}
+
+@font-face {
+    font-family: sfb;
+    src: url("/fonts/SFUIDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: sfblack;
+    src: url("/fonts/SFUIDisplay-Black.otf");
+}
+
+@font-face {
+    font-family: sfh;
+    src: url("/fonts/SFUIDisplay-Heavy.otf");
+}
+
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+
+    .ltr {
+        direction: ltr;
+    }
+
+    .rtl {
+        direction: rtl;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .red {
+        border: 1px solid red;
+    }
+
+    .blue {
+        border: 1px solid blue;
+    }
+
+    .green {
+        border: 1px solid green;
+    }
+}
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+    font-family: shabnam;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: shabnam;
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: shabnam !important;
+}
+
+a,
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007aff;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    color: #999;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+input,
+textarea,
+select {
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    -webkit-appearance: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #444 !important;
+}

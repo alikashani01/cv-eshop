@@ -1,0 +1,24 @@
+.switch {
+    background-color: #eaeaea;
+    width: 48px;
+    height: 24px;
+    border-radius: 50px;
+}
+
+.switch>* {
+    display: block;
+    background-color: #dadada;
+    width: 22px;
+    height: 20px;
+    border-radius: 50%;
+    transition: .6s;
+    transform: translateX(50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#active {
+    transform: translateX(-50%);
+    background: #00d166;
+}

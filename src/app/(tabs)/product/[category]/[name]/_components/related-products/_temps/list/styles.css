@@ -1,0 +1,103 @@
+#swiperRelatedProducts {
+    width: 100%;
+    height: 410px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+#swiperRelatedProductsSlider {
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    transition: transform 1.2s;
+}
+
+#swiperRelatedProductsSlider.activeSlide {
+    transform: scale(.95);
+}
+
+#swiperRelatedProductsSlider.deactiveSlide {
+    transform: scale(.9);
+}
+
+#swiperRelatedProducts .swiper-button-prev {
+    display: none;
+    border: 1px solid #eee2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d0d0d066;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/right-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% + 1px);
+    right: calc(50% - 60px);
+    transform: translateX(50%);
+    margin-top: 180px;
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperRelatedProducts:hover .swiper-button-prev {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperRelatedProducts .swiper-button-disabled {
+    display: none;
+}
+
+#swiperRelatedProducts .swiper-button-prev::after {
+    content: "";
+}
+
+#swiperRelatedProducts .swiper-button-next {
+    display: none;
+    border: 1px solid #eee2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d0d0d066;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/left-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% - 1px);
+    left: calc(50% - 60px);
+    margin-top: 180px;
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperRelatedProducts:hover .swiper-button-next {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperRelatedProducts .swiper-button-next::after {
+    content: "";
+}
+
+@media screen and (min-width:768px) {
+
+    #swiperRelatedProducts .swiper-button-next,
+    #swiperRelatedProducts .swiper-button-prev {
+        display: flex;
+    }
+
+    #swiperRelatedProducts {
+        height: 480px;
+        padding: 0 5%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #swiperRelatedProducts {
+        padding: 0 8%;
+    }
+}

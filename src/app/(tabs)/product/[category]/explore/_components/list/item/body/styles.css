@@ -1,0 +1,76 @@
+#swiperProductCardPhotos {
+    width: 100%;
+    height: 250px;
+}
+
+#swiperProductCardPhotosSlider {
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s;
+}
+
+#swiperProductCardPhotosSlider.activeSlide {
+    transform: scale(.95);
+}
+
+#swiperProductCardPhotosSlider.deactiveSlide {
+    transform: scale(.9);
+}
+
+#swiperProductCardPhotos .swiper-button-prev {
+    border: 1px solid #eeea;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dddddd66;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/right-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% + 1px);
+    right: 10px;
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperProductCardPhotos:hover .swiper-button-prev {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperProductCardPhotos .swiper-button-disabled {
+    display: none;
+}
+
+#swiperProductCardPhotos .swiper-button-prev::after {
+    content: "";
+}
+
+#swiperProductCardPhotos .swiper-button-next {
+    border: 1px solid #eeea;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dddddd66;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/left-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% - 1px);
+    left: 10px;
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperProductCardPhotos:hover .swiper-button-next {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperProductCardPhotos .swiper-button-next::after {
+    content: "";
+}

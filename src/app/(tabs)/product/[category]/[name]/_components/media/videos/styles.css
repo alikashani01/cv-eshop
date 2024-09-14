@@ -1,0 +1,90 @@
+/* #swiperNavigationProductMedia {
+    width: 100%;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+#swiperNavigationProductMediaSlider {
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    transition: transform 1.2s;
+}
+
+#swiperNavigationProductMediaSlider.activeSlide {
+    transform: scale(.95);
+}
+
+#swiperNavigationProductMediaSlider.deactiveSlide {
+    transform: scale(.9);
+}
+
+#swiperNavigationProductMedia .swiper-button-prev {
+    border: 1px solid #eee2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d0d0d066;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/left-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% + 1px);
+    right: calc(50% - 60px);
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperNavigationProductMedia:hover .swiper-button-prev {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperNavigationProductMedia .swiper-button-disabled {
+    display: none;
+}
+
+#swiperNavigationProductMedia .swiper-button-prev::after {
+    content: "";
+}
+
+#swiperNavigationProductMedia .swiper-button-next {
+    border: 1px solid #eee2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d0d0d066;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/right-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% - 1px);
+    left: calc(50% - 60px);
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperNavigationProductMedia:hover .swiper-button-next {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperNavigationProductMedia .swiper-button-next::after {
+    content: "";
+}
+
+@media screen and (min-width:768px) {
+    #swiperNavigationProductMedia {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #swiperNavigationProductMedia {
+        padding: 0 8%;
+    }
+} */

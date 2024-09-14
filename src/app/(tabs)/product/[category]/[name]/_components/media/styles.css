@@ -1,0 +1,102 @@
+#swiperProductMedia {
+    width: 100%;
+    padding: 0 20px;
+}
+
+#swiperProductMediaSlider {
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    transition: transform 1.2s;
+}
+
+#swiperProductMediaSlider.activeSlide {
+    transform: scale(.95);
+}
+
+#swiperProductMediaSlider.deactiveSlide {
+    transform: scale(.9);
+}
+
+#swiperProductMedia .swiper-button-prev {
+    display: none;
+    border: 1px solid #eee2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d0d0d066;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/right-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% + 2px);
+    right: auto;
+    left: calc(50% + 10px);
+    margin-top: 130px;
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperProductMedia:hover .swiper-button-prev {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperProductMedia .swiper-button-disabled {
+    display: none;
+}
+
+#swiperProductMedia .swiper-button-prev::after {
+    content: "";
+}
+
+#swiperProductMedia .swiper-button-next {
+    display: none;
+    border: 1px solid #eee2;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d0d0d066;
+    backdrop-filter: blur(2px);
+    background-image: url("/icons/arrow/left-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% auto;
+    background-position-x: calc(50% - 2px);
+    right: calc(50% + 10px);
+    margin-top: 130px;
+    transform: scale(.5) !important;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+#swiperProductMedia:hover .swiper-button-next {
+    transform: scale(1) !important;
+    opacity: 1;
+}
+
+#swiperProductMedia .swiper-button-next::after {
+    content: "";
+}
+
+@media screen and (min-width:768px) {
+
+    #swiperProductMedia .swiper-button-next,
+    #swiperProductMedia .swiper-button-prev {
+        display: flex
+    }
+
+    #swiperProductMedia {
+        padding: 0 5%;
+        padding-bottom: 150px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #swiperProductMedia {
+        padding: 0 8%;
+        padding-bottom: 80px;
+    }
+}

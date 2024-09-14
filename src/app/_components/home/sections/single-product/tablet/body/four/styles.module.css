@@ -1,0 +1,5 @@
+.element {
+    transition: transform 2.5s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
