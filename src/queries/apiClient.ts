@@ -1,8 +1,8 @@
 import axios, { AxiosError, AxiosRequestConfig } from "axios";
 
 export const axiosInstance = axios.create({
-    // baseURL: "/api/",
-    baseURL: "https://cv-eshop.netlify.app/api/",
+    baseURL: "/api/",
+    // baseURL: "https://cv-eshop.netlify.app/api/",
 });
 
 class APIClient<T, TResponse> {
