@@ -8,12 +8,12 @@
 // import Tablet from "./single-product/tablet/Tablet";
 // import Watch from "./single-product/watch/Watch";
 // import Skills from "./skills/Skills";
-import Today from "./today/Today";
+// import Today from "./today/Today";
 
 const Sections = () => {
     return (
         <div className="pb-40">
-            <Today />
+            {/* <Today /> */}
             {/* <Banners />
             <Categories />
             <HomePod />
