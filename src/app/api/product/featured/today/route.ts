@@ -6,7 +6,6 @@ export async function GET(request: NextRequest): Promise<void | Response> {
     try {
         connectDB();
 
-        // const products = await Product.find({}).limit(6).sort({ createdAt: 1 });
         const products = await Product.aggregate([{ $sample: { size: 5 } }]);
 
         return NextResponse.json(products, { status: 200 });
