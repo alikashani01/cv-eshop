@@ -12,7 +12,7 @@ export default async function Today() {
     }
     const products: Product[] = await response.json();
     return (
-        <section className="mt-16">
+        <section className="mt-3">
             <ContextProvider>
                 <SmallScreen products={products} />
                 <LargeScreen products={products} />

@@ -27,7 +27,7 @@ const One = () => {
         <button
             style={{ background: color }}
             className={`transition duration-500 ${
-                selectedColor === color ? "border-blue-500" : "border-gray-500"
+                selectedColor === color ? "border-blue" : "border-gray-500"
             } w-10 h-10 rounded-full border-2`}
             onClick={() => setSelectedColor(color)}
         ></button>

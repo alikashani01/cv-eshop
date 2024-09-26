@@ -40,13 +40,15 @@ const Third = () => {
             className="w-full flex flex-col items-center opacity-0 text-black"
         >
             <div>
-                <p className="text-6xl font-sfb">Apple HomePod</p>
+                <p className="text-6xl font-sfb bg-gradient-to-r from-[#F74EFE] via-[#74C6FB] to-[#0CFCC7] bg-clip-text text-transparent">
+                    Apple HomePod
+                </p>
                 <p className="mt-1 text-neutral-400">اسپیکر خانگی اپل</p>
             </div>
             <div className="w-full flex items-center justify-center gap-10 mt-6">
                 <Link href={`/product`}>جزییات بیشتر</Link>
                 <Link
-                    className="bg-blue-500 text-white p-[6px] px-5 rounded-full"
+                    className="bg-blue text-white p-[6px] px-5 rounded-full"
                     href={`/product`}
                 >
                     خرید

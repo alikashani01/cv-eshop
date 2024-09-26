@@ -26,7 +26,7 @@ const HomePod = () => {
         }
     });
     return (
-        <div className="*:bg-black hidden md:block">
+        <div className="mt-16 *:bg-black hidden md:block">
             <div className="h-[20vh]"></div>
             <div
                 ref={ref}

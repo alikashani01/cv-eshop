@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Categories() {
     return (
-        <section className="mt-4 md:mt-16 px-4 md:px-[8%] pb-16">
+        <section className="mt-4 md:mt-8 px-4 md:px-[8%] pb-16">
             <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 {categories.map((category) => (
                     <li key={category.href}>

@@ -26,7 +26,7 @@ const Second = ({ activeIndex }: { activeIndex: number }) => {
                 playsInline
             />
             <div className="absolute top-6 left-6 h-full flex flex-col">
-                <p className="font-sfblack uppercase text-2xl md:text-4xl text-neutral-50">
+                <p className="font-sfblack uppercase text-2xl md:text-4xl text-neutral-50 bg-gradient-to-r from-[#011795] via-[#03bbe9] to-[#a301f4] bg-clip-text text-transparent">
                     iPad Mini M4 2024
                 </p>
                 <div className="*:text-left py-2 *:py-[2px] *:text-white">
