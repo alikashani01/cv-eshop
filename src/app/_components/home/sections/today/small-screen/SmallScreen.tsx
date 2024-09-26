@@ -7,6 +7,8 @@ import "swiper/css/navigation";
 import { Grid, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./styles.css";
+import Link from "next/link";
+import convertProductFaName from "@/src/utils/convertProductFaName";
 
 const SmallScreen = ({ products }: { products: Product[] }) => {
     return (
@@ -23,7 +25,14 @@ const SmallScreen = ({ products }: { products: Product[] }) => {
             >
                 {products?.map((product) => (
                     <SwiperSlide key={product._id} id="homeTodaySwiperSlider">
-                        <div className="h-full bg-second-theme rounded-2xl p-4">
+                        <Link
+                            href={`product/${
+                                product.category.en
+                            }/${convertProductFaName(
+                                product.title?.fa || product.name?.fa
+                            )}`}
+                            className="flex-col justify-between h-full bg-second-theme rounded-2xl p-4"
+                        >
                             <Image
                                 width={500}
                                 height={500}
@@ -33,7 +42,7 @@ const SmallScreen = ({ products }: { products: Product[] }) => {
                             />
                             <p
                                 title={product.name?.en}
-                                className="ltr w-full text-sm font-sfl text-center text-ellipsis overflow-hidden text-nowrap py-2"
+                                className="ltr w-full text-sm text-neutral-600 font-sfl text-center text-ellipsis overflow-hidden text-nowrap py-2"
                             >
                                 {product.name?.en}
                             </p>
@@ -47,7 +56,7 @@ const SmallScreen = ({ products }: { products: Product[] }) => {
                                 ))}
                             </div>
                             <div className="flex items-center justify-center gap-1 pt-2">
-                                <p className="font-shabt text-sm">
+                                <p className="font-shabt text-sm text-neutral-600">
                                     {product.pricing[0].value.toLocaleString(
                                         "fa"
                                     )}
@@ -56,7 +65,7 @@ const SmallScreen = ({ products }: { products: Product[] }) => {
                                     تومان
                                 </p>
                             </div>
-                        </div>
+                        </Link>
                     </SwiperSlide>
                 ))}
             </Swiper>

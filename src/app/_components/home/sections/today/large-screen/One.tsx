@@ -29,16 +29,31 @@ const One = ({ product }: { product: Product }) => {
     }, [ref.current]);
     return (
         <div ref={ref} className="row-span-2 col-span-1 p-6">
-            <Image
-                width={2000}
-                height={2000}
-                src={product.cover[0]}
-                alt=""
-                className="w-full h-[280px] object-contain"
-            />
+            <Link
+                href={`product/${product.category.en}/${convertProductFaName(
+                    product.title?.fa || product.name?.fa
+                )}`}
+            >
+                <Image
+                    width={2000}
+                    height={2000}
+                    src={product.cover[0]}
+                    alt=""
+                    className="w-full h-[280px] object-contain"
+                />
+            </Link>
             <div>
-                <div className="text-center py-4">
-                    <p className="font-sfl tracking-wide">{product.name?.en}</p>
+                <Link
+                    href={`product/${
+                        product.category.en
+                    }/${convertProductFaName(
+                        product.title?.fa || product.name?.fa
+                    )}`}
+                    className="block text-center py-4"
+                >
+                    <p className="font-sfl tracking-wide text-neutral-600">
+                        {product.name?.en}
+                    </p>
                     <p className="text-[.8rem] font-shabt text-gray-400">
                         {product.name?.fa}
                     </p>
@@ -46,11 +61,11 @@ const One = ({ product }: { product: Product }) => {
                         {product.subCategories.length > 0 &&
                             product.subCategories[0].fa}
                     </p>
-                </div>
+                </Link>
                 <div className="flex items-center justify-between px-2">
                     <div className="flex items-center gap-4">
                         <Link
-                            className="bg-blue-600 text-white p-1 px-4 rounded-full text-sm"
+                            className="bg-blue text-white p-1 px-4 rounded-full text-sm"
                             href={`/product/${
                                 product.category.en
                             }/${convertProductFaName(product.name.fa)}/buy`}
@@ -60,18 +75,23 @@ const One = ({ product }: { product: Product }) => {
                         <Price price={product.pricing[0].value} />
                     </div>
                     <button
-                        className="w-9 h-9 rounded-full bg-white"
+                        className="w-8 h-8 rounded-full bg-white"
                         onClick={() => {
                             setProductDetails(product);
                             handleOpen();
                         }}
                     >
-                        <Image
-                            width={18}
-                            height={18}
-                            src="/icons/add.png"
-                            alt=""
-                        />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#777"
+                            className="bi bi-eye-fill"
+                            viewBox="0 0 16 16"
+                        >
+                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                        </svg>
                     </button>
                 </div>
             </div>
