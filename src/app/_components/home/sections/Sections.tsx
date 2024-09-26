@@ -1,5 +1,5 @@
 // import HomePod from "./animations/homepod/HomePod";
-// import Banners from "./banners/Banners";
+import Banners from "./banners/Banners";
 // import Categories from "./Categories";
 // import Discount from "./discount/Discount";
 // import Featured from "./featured/Featured";
@@ -13,18 +13,18 @@ import Today from "./today/Today";
 const Sections = () => {
     return (
         <div className="pb-40">
+            <Banners />
             <Today />
-            {/* <Banners />
-            <Categories />
-            <HomePod />
-            <Mobile />
-            <Today />
-            <Related />
-            <Skills />
-            <Watch />
-            <Discount />
-            <Featured />
-            <Tablet /> */}
+            {/* <Categories /> */}
+            {/* <HomePod /> */}
+            {/* <Mobile /> */}
+            {/* <Today /> */}
+            {/* <Related /> */}
+            {/* <Skills /> */}
+            {/* <Watch /> */}
+            {/* <Discount /> */}
+            {/* <Featured /> */}
+            {/* <Tablet /> */}
         </div>
     );
 };
