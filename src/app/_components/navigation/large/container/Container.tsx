@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Categories from "./categories/Categories";
+import Search from "./search/Search";
 import User from "./user/User";
 const Bag = dynamic(() => import("./bag/Bag"), { ssr: false });
 
@@ -20,6 +21,7 @@ const Container = () => {
             </div>
 
             <div className="justify-center">
+                <Search />
                 <Categories />
             </div>
 
