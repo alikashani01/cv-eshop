@@ -7,8 +7,6 @@ import Item from "./item/Item";
 
 const List = () => {
     const { _id } = useContext(Context);
-    console.log("FUCK");
-
     const { data: replies, isLoading } = useFetchReviewReplies(_id);
     return (
         <ul className="w-[100%] py-4 px-6 mx-auto">

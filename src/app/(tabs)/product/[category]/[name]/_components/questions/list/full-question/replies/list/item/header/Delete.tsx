@@ -14,11 +14,7 @@ const Delete = () => {
         user?._id === replyUser._id && (
             <button
                 className="min-w-[22px]"
-                onClick={() => {
-                    console.log(question);
-
-                    deleteReply.mutate();
-                }}
+                onClick={() => deleteReply.mutate()}
             >
                 {isPending ? (
                     <CircularProgress size={14} sx={{ color: "#ff6666" }} />
