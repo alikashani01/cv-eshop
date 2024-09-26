@@ -9,7 +9,7 @@ export default function Categories() {
                 {categories.map((category) => (
                     <li key={category.href}>
                         <Link
-                            className="flex-col bg-second-theme rounded-2xl p-4"
+                            className="flex-col bg-second-theme rounded-2xl p-3 py-4 pb-8 gap-2"
                             href={`product/${category.href}/explore?lastPath=/`}
                         >
                             <p className="h-8 self-start pr-2 text-orange-500 text-[.85rem]">
