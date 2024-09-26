@@ -28,19 +28,19 @@ const Laptop = () => {
                     onMouseLeave={handleClose}
                 >
                     <Container
-                        category="لپتاپ"
+                        category="laptop"
                         query="brand"
                         title="برندها"
                         options={laptopBrands}
                     />
                     <Container
-                        category="لپتاپ"
+                        category="laptop"
                         query="application"
                         title="انواع"
                         options={laptopSubCategories}
                     />
                     <Container
-                        category="لپتاپ"
+                        category="laptop"
                         query="cpu"
                         title="پردازنده‌ها"
                         options={laptopProccessors}

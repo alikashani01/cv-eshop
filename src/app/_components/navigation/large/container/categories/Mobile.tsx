@@ -28,19 +28,19 @@ const Mobile = () => {
                     onMouseLeave={handleClose}
                 >
                     <Container
-                        category="موبایل"
+                        category="mobile"
                         query="brand"
                         title="برندها"
                         options={laptopBrands}
                     />
                     <Container
-                        category="موبایل"
+                        category="mobile"
                         query="application"
                         title="انواع"
                         options={laptopSubCategories}
                     />
                     <Container
-                        category="موبایل"
+                        category="mobile"
                         query="cpu"
                         title="پردازنده‌ها"
                         options={laptopProccessors}

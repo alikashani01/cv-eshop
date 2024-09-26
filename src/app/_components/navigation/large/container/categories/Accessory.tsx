@@ -28,19 +28,19 @@ const Accessory = () => {
                     onMouseLeave={handleClose}
                 >
                     <Container
-                        category="لوازم جانبی"
+                        category="accessory"
                         query="brand"
                         title="برندها"
                         options={laptopBrands}
                     />
                     <Container
-                        category="لوازم جانبی"
+                        category="accessory"
                         query="application"
                         title="انواع"
                         options={laptopSubCategories}
                     />
                     <Container
-                        category="لوازم جانبی"
+                        category="accessory"
                         query="cpu"
                         title="پردازنده‌ها"
                         options={laptopProccessors}

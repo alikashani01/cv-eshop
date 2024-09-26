@@ -1,7 +1,10 @@
+import dynamic from "next/dynamic";
 import LargeScreenContainer from "../../../_components/LargeScreenContainer";
 import Addresses from "./addresses/Addresses";
-import LatestVisited from "./latest-visited/LatestVisited";
 import PersonalInfo from "./personal-info/PersonalInfo";
+const LatestVisited = dynamic(() => import("./latest-visited/LatestVisited"), {
+    ssr: false,
+});
 
 const Large = () => {
     return (

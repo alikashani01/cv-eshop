@@ -29,15 +29,15 @@ const NavigationSmall = () => {
 
     return (
         !isHidden && (
-            <ul className="lg:hidden fixed bottom-0 left-0 z-10 w-full h-11 flex items-center justify-between *:flex-1 bg-[#fafafaaa] border-t border-neutral-100 backdrop-blur-2xl *:relative">
+            <ul className="lg:hidden fixed bottom-0 left-0 z-10 w-full h-10 flex items-center justify-between *:flex-1 bg-[#fafafaaa] border-t border-neutral-100/30 backdrop-blur-2xl *:relative">
                 <div className="pt-[1px]">
                     {accountActive ? (
                         <Tab
                             href="/account/dashboard"
                             icon="/icons/nav/account.png"
                             activeIcon="/icons/nav/account-a.png"
-                            width={30}
-                            height={30}
+                            width={26}
+                            height={26}
                             active={true}
                         />
                     ) : (
@@ -45,8 +45,8 @@ const NavigationSmall = () => {
                             href="/account/dashboard"
                             icon="/icons/nav/account.png"
                             activeIcon="/icons/nav/account-a.png"
-                            width={28}
-                            height={28}
+                            width={24}
+                            height={24}
                             active={false}
                         />
                     )}
@@ -56,8 +56,8 @@ const NavigationSmall = () => {
                     href="/bag"
                     icon="/icons/nav/bag.png"
                     activeIcon="/icons/nav/bag-a.png"
-                    width={29}
-                    height={29}
+                    width={24.5}
+                    height={24.5}
                     active={bagActive}
                 />
 
@@ -66,8 +66,8 @@ const NavigationSmall = () => {
                         href="/search"
                         icon="/icons/nav/search.png"
                         activeIcon="/icons/nav/search-a.png"
-                        width={31}
-                        height={31}
+                        width={25.5}
+                        height={25.5}
                         active={true}
                     />
                 ) : (
@@ -75,8 +75,8 @@ const NavigationSmall = () => {
                         href="/search"
                         icon="/icons/nav/search.png"
                         activeIcon="/icons/nav/search-a.png"
-                        width={34}
-                        height={34}
+                        width={32}
+                        height={32}
                         active={false}
                     />
                 )}
@@ -85,8 +85,8 @@ const NavigationSmall = () => {
                     href={`/product/categories?lastPath=${pathname}`}
                     icon="/icons/nav/categories.png"
                     activeIcon="/icons/nav/categories-a.png"
-                    width={29}
-                    height={29}
+                    width={24}
+                    height={24}
                     active={productsActive}
                 />
 
@@ -94,8 +94,8 @@ const NavigationSmall = () => {
                     href="/"
                     icon="/icons/nav/home.png"
                     activeIcon="/icons/nav/home-a.png"
-                    width={31}
-                    height={31}
+                    width={26.5}
+                    height={26.5}
                     active={homeActive}
                 />
             </ul>
