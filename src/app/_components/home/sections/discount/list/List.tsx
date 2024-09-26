@@ -34,6 +34,7 @@ const List = ({ products }: { products: Product[] }) => {
                 spaceBetween={10}
                 modules={[Navigation]}
                 navigation={true}
+                speed={800}
             >
                 {products?.map((product) => (
                     <SwiperSlide

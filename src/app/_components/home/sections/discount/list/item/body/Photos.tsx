@@ -25,7 +25,9 @@ const Photos = () => {
                     key={index}
                 >
                     <Link
-                        href={name.fa.split(" ").join("-")}
+                        href={`product/${category.en}/${name.fa
+                            .split(" ")
+                            .join("-")}`}
                         className="w-full h-full"
                     >
                         <Image

@@ -3,11 +3,11 @@ import { useContext } from "react";
 import { Context } from "../Item";
 
 const Bottom = () => {
-    const { _id, name, pricing } = useContext(Context);
+    const { category, name, pricing } = useContext(Context);
     return (
         <div className="bg-[#eaeaea55] flex items-center justify-between px-4 h-12">
             <Link
-                href={`/product/details/${_id}/${name.fa}/buy`}
+                href={`/product/${category.en}/${name.fa}/buy`}
                 className="bg-[#007aff] text-white p-[2px] px-4 text-[.9rem] rounded-full"
             >
                 خرید

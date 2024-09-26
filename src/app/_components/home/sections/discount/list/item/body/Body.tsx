@@ -9,7 +9,10 @@ const Body = () => {
         <div className="flex-col pt-3 px-2 h-[304px]">
             <Photos />
 
-            <Link href={name.fa.split(" ").join("-")} className="flex-col">
+            <Link
+                href={`product/${category.en}/${name.fa.split(" ").join("-")}`}
+                className="flex-col"
+            >
                 <p className="h-[44px] mt-2 tracking-[0px] font-sfl text-center leading-5 text-neutral-500 flex justify-center overflow-hidden">
                     {name.en}
                 </p>
